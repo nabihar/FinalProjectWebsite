@@ -1,7 +1,7 @@
 ---
 title: "Sci-Fi and Techno Orientalism"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  Is science fiction a reaction to Yellow Peril?
 site: distill::distill_website
 ---
 
@@ -41,10 +41,12 @@ moviedata %>%
        subtitle = "Interest in science fiction spikes during the 80s and 90s.",
        x = "Year",
        y = "Number of Movies",
-       caption = "Source: IMDB")
+       caption = "Source: IMDb")
 ```
 
+
 ##### The next 3 graphs show GDP of Japan, China, and Singapore, which are countries that often serve as backdrops in science fiction movies. Films such as *Blade Runner* and *Big Hero 6* both model their setting after Japanese cities, and many films use these backdrops to communicate bleak, apocalyptic futures. 
+
 
 ```{r JPNGDP}
 JPNgdpdata %>% 
@@ -91,7 +93,7 @@ SGPgdpdata %>%
   theme_minimal()
 ```
 
-#### Some events to note are Japan's economic rise in the 1980's and 1990's, Singapore's growth in the 1990s, and China's growth in the late 2000s. The following graph shows the number of user ratings for each movie, and gives the title, release year, and plot summary. 
+##### Some events to note are Japan's economic rise in the 1980's and 1990's, Singapore's growth in the 1990s, and China's growth in the late 2000s. The following graph shows the number of user ratings for each movie, and gives the title, release year, and plot summary. 
 
 ```{r num_ratingsdata, echo = FALSE}
 moviedata2 <- moviedata %>% 
@@ -112,14 +114,37 @@ keywordplotly <- keywordplot %>%
                        y = votes,
                        text = paste("Title:", title, "\n", "Plot:", description, "\n", "Year Released:", year)))+
   geom_point()+
+  geom_jitter()+
   theme_minimal()+
   labs(title = "Number of User Ratings",
        subtitle = "User interest in science fiction increases after the 1980s.",
        x = "Year",
        y = "Number of User Ratings",
-       caption = "Source: IMDB")
+       caption = "Source: IMDb")
 ggplotly(keywordplotly, tooltip = "text")
 ```
 
+##### Not all of the movies listed on the plot above contain blatant orientalist imagery, but most adopt more subtle ways of "othering" foreign countries and powers. A team of the "good guys" could be analagous to the US government, military, or police force, while the "villains" in the movie depict a foreign power. Cyborgs and AI will often adopt East Asian features and accents, which furthers stereotypes about East Asians (primarily East Asian women) being submissive, subservient, or unfeeling. Many of the post-2000 movies also shift their focus from East Asia to other regions of the world, most notably the Middle East and its relationship to the US military. The most significant example of this is the Marvel Cinematic Universe, which many have pointed to as glorifying the US airforce and depicting imperialism and colonialism in a positive light.
 
+```{r image-1}
+library(knitr)
+include_graphics("images/marvelcu.jpeg")
+```
+
+###### *Above: Scene from Captain Marvel (2019)*
+
+```{r}
+include_graphics("images/bladerunner.jpeg")
+```
+
+###### *Above: Scene from Blade Runner (1982)*
+
+```{r}
+include_graphics("images/cloudatlas.jpeg")
+```
+
+###### *Above: Scene from Cloud Atlas (2012)*
+
+# Conclusion
+##### Mass media affects our worldview long after we leave the movie theater. Science fiction has always been an imagining of our fears of the future, and pushing the blame for a fictional apocalypse on a real racial minority has off-screen consequences. Anxieties depicted in media inevitably result in violence, and Asian Americans have historically been forced to face the consequences of their fictional counterparts.
 
