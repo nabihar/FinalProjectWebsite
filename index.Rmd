@@ -102,7 +102,7 @@ keywordplot <- merge(moviedata2, movieplot, by = "Title")
 ```
 
 
-```{r num_ratings}
+```{r num_ratings, layout = "l-screen-inset"}
 keywordplotly <- keywordplot %>% 
   select(title, year, genre, country, votes, description) %>% 
   filter(country == "USA") %>% 
@@ -113,8 +113,8 @@ keywordplotly <- keywordplot %>%
   ggplot(mapping = aes(x = year,
                        y = votes,
                        text = paste("Title:", title, "\n", "Plot:", description, "\n", "Year Released:", year)))+
-  geom_point()+
-  geom_jitter()+
+  geom_point(alpha = 0.1, size = 0.2)+
+  geom_jitter(height = 0.25, width = 0.25)+
   theme_minimal()+
   labs(title = "Number of User Ratings",
        subtitle = "User interest in science fiction increases after the 1980s.",

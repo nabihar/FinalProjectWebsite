@@ -1,7 +1,6 @@
 ---
-title: "About this site"
+title: "About"
 description: |
-  Some additional details about the website
 ---
 
 ```{r setup, include=FALSE}
@@ -9,5 +8,21 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # Introduction
-### Background
 ##### For many Americans, science fiction evokes fond memories of the 80s and 90s, with films like *Star Wars* (1977), *Blade Runner* (1982), and *Alien* (1979) coming to mind. These movies and others often imagine apocalyptic futures and hyper-technological societies, and often draw from East Asian cityscapes for inspiration. Cyborgs and robots in American science fiction are also often modeled after East Asian women, and are depicted as subservient, submissive, and unfeeling. This phenomenon has been dubbed **"Techno Orientalism"**, or the depiction of East Asia as both technologically advanced and intellectually/morally primitive. This project will explore interest in science fiction films over time and compare it to GDPs of East Asian countries to evaluate whether or not science fiction is a reaction to Yellow Peril.
+
+# Data
+##### The data used to create this project can be found here: https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset 
+
+# Other Sources and Images
+##### Roh, David S., et al. Techno-Orientalism: Imagining Asia in Speculative Fiction, History, and Media. Rutgers University Press, 2015. 
+##### Thewrap.com, 2021, www.thewrap.com/wp-content/uploads/2019/03/Captain-Marvel-Air-Force-618x400.jpg.
+##### Variety.com, 2021, variety.com/wp-content/uploads/2013/10/blade-runner-1982.jpg. 
+##### Wp.com, 2021, i2.wp.com/www.tor.com/wp-content/uploads/2014/12/CloudAtlas01.jpg?fit=475%2C%209999&crop=0%2C0%2C100%2C285px.
+
+# About the Creator
+##### Hi! My name is Nabiha Rabbani, and I'm a rising senior at Northside College Prep High School in Chicago, Illinois. Check out my GitHub here: https://github.com/nabihar
+
+##### GitHub Repo for this project can be found here: https://github.com/nabihar/FinalProjectWebsite
+
+
+
