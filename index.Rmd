@@ -16,8 +16,7 @@ CHNgdpdata <- read_csv("exportCHN.csv")
 SGPgdpdata <- read_csv("exportSGP.csv")
 ```
 
-# Science Fiction and Techno Orientalism
-### Model
+# Model
 ##### The first plot shows the number of science fiction movies each year. Filmmakers' interest in science fiction increased in the 1980s and 1990s.
 
 ```{r num_releases}
