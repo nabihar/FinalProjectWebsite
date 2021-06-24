@@ -93,12 +93,10 @@ SGPgdpdata %>%
 
 #### Some events to note are Japan's economic rise in the 1980's and 1990's, Singapore's growth in the 1990s, and China's growth in the late 2000s. The following graph shows the number of user ratings for each movie, and gives the title, release year, and plot summary. 
 
-```{r num_ratingsdata}
+```{r num_ratingsdata, echo = FALSE}
 moviedata2 <- moviedata %>% 
   mutate(Title = title)
 keywordplot <- merge(moviedata2, movieplot, by = "Title")
-
-``
 ```
 
 
